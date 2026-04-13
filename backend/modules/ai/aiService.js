@@ -67,7 +67,7 @@ const generateAIResponse = async (query) => {
 
 const extractLocationAndPlaceAI = async (query) => {
     try {
-        const response = await axios.post(
+        const response = await axios.post( 
             "https://openrouter.ai/api/v1/chat/completions",
             {
                 model: "mistralai/mixtral-8x7b-instruct",
